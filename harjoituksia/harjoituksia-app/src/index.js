@@ -131,11 +131,40 @@ const Footer = () => {
   )
 }
 
+const Kartta = () => {
+  return (
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d62508.33461855282!2d-12.301265988013368!3d-37.11082045727994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sfi!2sfi!4v1710869247425!5m2!1sfi!2sfi"
+      width="600" 
+      height="600" 
+      style={{ border: "5px solid red", borderRadius: "500px"  }} 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  )
+}
+
+const Ympyra = () => {
+  return (
+    <svg width="300" height="100">
+      <circle cx="50" cy="50" r="40" fill="red" />
+      <text x="10" y="50" fill="black" dominantBaseline="middle" textAnchor="middle" fontSize="36" fontWeight="bold" fontFamily="Arial, sans-serif">Olet tässä</text>
+    </svg>
+  )
+}
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
   <Valikko />
   <Sisalto />
+  <Kartta />
+  <Ympyra />
   <Footer />
 </>
 )
+
+
+
+
