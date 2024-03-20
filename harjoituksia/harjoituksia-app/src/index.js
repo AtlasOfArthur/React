@@ -93,15 +93,41 @@ root.render(
 // reportWebVitals();
 */
 
+
 const Valikko = () => {
   return (
-<div>
-  <ul>
-    <li>Koti</li>
-    <li>Meistä</li>
-    <li>Ota yhteyttä</li>
-  </ul>
-</div>
+    <div>
+      <ul style={{
+        listStyleType: 'none',
+        margin: 0,
+        padding: 0,
+      }}>
+        <li style={{
+          float: 'left',
+          padding: '8px',
+          backgroundColor: '#aa11dd',
+          margin: '2px',
+          borderRadius: '4px',
+          border: '2px solid red',
+        }}>Koti</li>
+        <li style={{
+          float: 'left',
+          padding: '8px',
+          backgroundColor: '#ddaa11',
+          margin: '3px',
+          borderRadius: '4px',
+          border: '3px solid red',
+        }}>Meistä</li>
+        <li style={{
+          float: 'left',
+          padding: '8px',
+          backgroundColor: '#11aa11',
+          margin: '2px',
+          borderRadius: '4px',
+          border: '4px solid red',
+        }}>Ota yhteyttä</li>
+      </ul>
+    </div>
   )
 }
 
@@ -157,10 +183,19 @@ const Ympyra = () => {
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 <>
-  <Valikko />
-  <Sisalto />
-  <Kartta />
-  <Ympyra />
+  <div style={{ display: 'flex', flexDirection: 'column'}} >
+    <Valikko />
+  </div>
+  <div>
+    <Sisalto />
+  </div>
+  <div>
+    <Kartta />
+  </div>
+  <div>
+    <Ympyra />
+  </div>
+
   <Footer />
 </>
 )
