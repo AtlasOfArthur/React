@@ -1,40 +1,16 @@
 import React from 'react'; 
-import styles from "./styles/ReactCSS.css"
-import Reacticon from "./reacticon"
+import "./styles/ReactCSS.css"
+import Reacticon from "./images/logo192.png"
 import Alatunniste from "./alatunniste"
 
 const Valikko = () => {
     return (
       <div>
-        <ul style={{
-          listStyleType: 'none',
-          margin: 0,
-          padding: 0,
-        }}>
-          <li style={{
-            float: 'left',
-            padding: '8px',
-            backgroundColor: '#aa11dd',
-            margin: '2px',
-            borderRadius: '4px',
-            border: '2px solid red',
-          }}>Koti</li>
-          <li style={{
-            float: 'left',
-            padding: '8px',
-            backgroundColor: '#ddaa11',
-            margin: '3px',
-            borderRadius: '4px',
-            border: '3px solid red',
-          }}>Meistä</li>
-          <li style={{
-            float: 'left',
-            padding: '8px',
-            backgroundColor: '#11aa11',
-            margin: '2px',
-            borderRadius: '4px',
-            border: '4px solid red',
-          }}>Ota yhteyttä</li>
+        <ul>
+          <img src={Reacticon} className='logo'/>
+          <li >Koti</li>
+          <li>Meistä</li>
+          <li>Ota yhteyttä</li>
         </ul>
       </div>
     )
@@ -59,13 +35,16 @@ const Valikko = () => {
 const Tietoareactista = () => (
 <>
     <div>
-    <Reacticon /> <Valikko />
+      <Valikko />
     </div>
     <div>
-    <Sisalto />
+      <Sisalto />
     </div>
-    <Alatunniste />
+    <div>
+      <Alatunniste />
+    </div>
 </>
 )
 
 export default Tietoareactista;
+

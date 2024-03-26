@@ -1,3 +1,9 @@
+import phone from "../images/phone-icon.png";
+import mail from "../images/mail-icon.png";
+
+
+
+import "../styles/kisustyle.css";
 
 export default function Kissa(props) {
     return (
@@ -5,11 +11,11 @@ export default function Kissa(props) {
             <img src={props.img} />
             <h3>{props.name}</h3>
             <div className="info-group">
-                <img src="../images/phone-icon.png"/>
+                <img src={phone}/>
                 <p>{props.phone}</p>
             </div>
             <div className="info-group">
-                <img src="../images/mail-icon.png" />
+                <img src={mail} />
                 <p>{props.email}</p>
             </div>
         </div>
