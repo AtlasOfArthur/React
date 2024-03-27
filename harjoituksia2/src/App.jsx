@@ -1,33 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import kissa1 from "../images/whiskerson.png";
+import kissa2 from "../images/fluffy.png";
+import kissa3 from "../images/felix.png";
+import kissa4 from "../images/pumpkin.png";
+import Kisut from "../components/Kisut";
+import Kissa from "../components/Kissa";
+import "../src/mystyles/kisustyle.css"; // Jostainsyystä ei löytäny jos oli src kansiossa. Siksi piti tehdä omille tyyleille oma kansio
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div className='contacts'>
+          <Kisut /> 
+          <Kissa
+          img={kissa1} // Toimii vaan jos importtaa
+          name="Mr. Whiskerson(props)"
+          phone="(212) 555-1234"
+          email="mr.whiskers@catnip.meow"
+          />
+          <Kissa
+          img={kissa2}
+          name="Fluffy(props)"
+          phone="(212) 555-2234"
+          email="mr.fluffypuf@meowland.purr"
+          />
+          <Kissa
+          img={kissa3}
+          name="Felix(props)"
+          phone="(212) 555-3334"
+          email="felix@napnep.cat"
+          />
+          <Kissa
+          img={kissa4}
+          name="Pumpkin(props)"
+          phone="(212) 555-4444"
+          email="pompkeens@netcat.meow"
+          />
+        </div>
     </>
   )
 }
