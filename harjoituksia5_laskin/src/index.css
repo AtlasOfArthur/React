@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 255, 238, 0.87);
+  background-color: rgb(109, 45, 178);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background-image: url("./assets/react.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: auto;
+
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border: 3px solid rgb(58, 141, 148);
+  border-radius: 50%;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  text-align: center;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: 0.45s;
+}
+button:hover {
+  border-color: #646cff;
+  background-color: #393939;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.counter {
+  justify-content: center;
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+.counter--count {
+  width: 280px;
+  text-align: center;
+  border: 3px solid rgb(58, 141, 148);
+  border-radius: 50%;
+  background-color: rgba(26, 26, 26, 0.9);
+  font-size: 2em;
+  font-weight: 700;
+  cursor: default;
+}
+.countbutton {
+  text-align: center;
+  font-size: 2em;
+}

@@ -1,0 +1,15 @@
+.kortti {
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    width: 400;
+    border: 5px solid rgb(58, 141, 148);
+    border-radius: 15px;
+}
+.kortit {
+    display: flex;
+    flex-wrap: wrap;
+}
+.bold {
+    font-weight: 700;
+}
