@@ -1,6 +1,6 @@
 const Otsikko3 = () => {
     return (
-      <h1>Otsikko3</h1>
+      <h1>Section3 Otsikko</h1>
     );
   };
   

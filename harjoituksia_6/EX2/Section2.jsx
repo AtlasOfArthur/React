@@ -5,7 +5,7 @@ import Otsikko from "./Otsikko2";
 const Section2 = () => {
    return (
         <div>
-            <Otsikko teksti=" Section2 otsikko ~oprop2.teksti" />
+            <Otsikko teksti=" Section2 Otsikko ~oprop2.teksti" />
             <Kappale teksti="Kappale ~kprop2.teksti"/>
         </div>
     );
