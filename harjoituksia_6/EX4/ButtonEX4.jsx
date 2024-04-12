@@ -1,6 +1,6 @@
 import React from "react";
 
-const PainikeEx4 = ({painikeTekstiEX4, kasittelePainallusEX4}) => {
+const PainikeEX4 = ({painikeTekstiEX4, kasittelePainallusEX4}) => {
     return (
         <button 
             onClick={kasittelePainallusEX4}>
@@ -9,4 +9,4 @@ const PainikeEx4 = ({painikeTekstiEX4, kasittelePainallusEX4}) => {
     )
 }
 
-export default PainikeEx4;
+export default PainikeEX4;
