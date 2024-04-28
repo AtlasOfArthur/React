@@ -1,6 +1,6 @@
 import React from "react";
-
-const Laskin = () => {
+// Nuolifunktioissa, ei käytetä 'default' exportattaessa
+export const Laskin = () => {
 
     const [laskuri, setLaskuri] = React.useState(0);
 
@@ -23,4 +23,6 @@ const Laskin = () => {
     );
 }
 
-export default Laskin
+// export default Laskin // Ei tarvita, koska on exportattu alussa
+
+
