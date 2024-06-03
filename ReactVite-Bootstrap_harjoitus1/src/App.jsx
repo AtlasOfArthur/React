@@ -2,19 +2,19 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css' // Tää pitää ilmeisesti ottaa pois käytöstä myöhemmin ettei tuu ristiriitasuuksia
-import "bootstrap/dist/css/bootstrap.min.css"; // dark theme >> index.html in (<body>)
-import ShapeExample from './components/ShapeExample';
-import ReactViteBootstrap from './components/ReactViteBootstrapStart';
+import "./../node_modules/bootstrap/dist/css/bootstrap.min.css" // nyt on haettu oikein
 
-// import Rvb from './components/Rvb'; // Yritin tämän kanssa ja ilmankin
-// <Rvb /> ei jostainsyystä toiminut ("is not defined")
-// Rvb on kai jotenkin rikki. Korvattu ReactViteBootstrap kompopnentilla, nyt löytää
+import BootstrapBtnComp from './components/BootstrapbtnComponent'
+import ShapeExample from './components/ShapeExample';
+
+
 function App() {
 
   return (
     <>
-      <ReactViteBootstrap /> {/*Ei toimi !?*/}
-      <ShapeExample /> {/*Toimii*/}
+    
+
+    
       <div>
         <a href="https://react.dev" target="_blank">
           <img src={reactLogo} className="logo react" alt="React logo" />
@@ -25,9 +25,15 @@ function App() {
 
       </div>
       <h1>ReactVite + Bootstrap</h1>
+      <div>
+        {/* Testing if Bootstrap works (Yellow button) */}
+        <button className="btn btn-warning p-3 m-5">BootstrapButton</button>
 
+        {/* Testing if Bootstrap works from component (Lightblue button) */}
+        <BootstrapBtnComp/>
+      </div>
 
-
+      <ShapeExample /> {/*Toimii, mut ei kunnolle, kun ei oo kuvia... kait*/} 
     </>
   )
 }
